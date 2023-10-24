@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Components/Login";
 import Memo from "./UseMemo/Memo";
 import Usereducier from "./UseMemo/Usereducier";
+import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
+      <Toaster/>
       {/* <Usereducier/> */}
       {/* <Memo/> */}
     </div>
